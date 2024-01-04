@@ -4,5 +4,5 @@
 
 Lol you thought I would actually add a README.md file 😍
 
-website;
+website:
 https://soggywaffle27.github.io/-Nerd-Emoji-/
