@@ -7,8 +7,8 @@ button.addEventListener('click', onButtonClick);
 
 function makeButton() {
 	const newButton = document.createElement('button');
-  newButton.textContent = 'Click me!';
-  document.body.appendChild(newButton);
+	newButton.textContent = 'Click me!';
+  	document.body.appendChild(newButton);
 }
 
 newButton.addEventListener('click', () => {
