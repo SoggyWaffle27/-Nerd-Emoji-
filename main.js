@@ -5,11 +5,13 @@ function onButtonClick() {
 const button = document.querySelector('button');
 button.addEventListener('click', onButtonClick);
 
-function makeButton() {
+function makeButton(name) {
 	const newButton = document.createElement('button');
-	newButton.textContent = 'Click me!';
+	newButton.textContent = name;
   	document.body.appendChild(newButton);
 }
+
+makeButton("Click for happy!")
 
 newButton.addEventListener('click', () => {
   alert('New button clicked!');
