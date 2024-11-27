@@ -2,14 +2,16 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
+    background: #2f2f2f;
+    /* background: linear-gradient(to bottom, #a9a9a9, #2f2f2f);  */
+    color: #333; /* Text color */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
 }
+
 h1 {
     text-align: center;
     margin: 20px 0;
@@ -23,15 +25,15 @@ h1 {
     width: 100%;
 }
 .grid-item {
-    background-color: #fff;
-    border: 1px solid #ddd;
+    background-color: #000;
+    border: 2px solid linear-gradient(to bottom, #fffa65, #ff6200);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
 }
 .grid-item img {
-    width: 100%;
+    width: 100%; 
     height: auto;
 }
 .grid-item .info {
