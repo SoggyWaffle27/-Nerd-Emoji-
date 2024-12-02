@@ -41,7 +41,7 @@ header {
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     padding: 10px 20px;
     display: flex;
@@ -178,11 +178,6 @@ h1 {
 .dropdowns {
     margin: 0px 200px;
 }
-
-/* .grid-item .thumbnail {
-    position: absolute; Ensure it stacks properly 
-    object-fit: cover; 
-} */
  
 .grid-item .gif {
     display: none; /* Hide the GIF initially */
