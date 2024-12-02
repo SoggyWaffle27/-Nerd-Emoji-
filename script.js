@@ -7,8 +7,8 @@ modeSwitcher.addEventListener('click', () => {
 
     // Update button text based on current mode
     if (body.classList.contains('dark-mode')) {
-        modeSwitcher.textContent = 'Switch to Light Mode';
+        modeSwitcher.textContent = 'Light Mode';
     } else {
-        modeSwitcher.textContent = 'Switch to Dark Mode';
+        modeSwitcher.textContent = 'Dark Mode';
     }
 });
