@@ -182,3 +182,16 @@ h1 {
 .dropdowns {
     margin: 0px 200px;
 }
+
+.grid-item img {
+    width: 100%; /* Ensures the images are responsive */
+}
+
+.grid-item .gif {
+    display: none; /* Hide the GIF initially */
+    position: absolute; /* Stack it on top of the thumbnail */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
