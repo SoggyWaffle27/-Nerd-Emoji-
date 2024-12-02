@@ -132,12 +132,8 @@ h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
+    position: relative; /* Ensure relative positioning for absolute child elements */
 }
-
-/* img {
-    width: 100%;
-    height: auto;
-} */
 
 .grid-item .info {
     padding: 10px;
@@ -183,14 +179,25 @@ h1 {
     margin: 0px 200px;
 }
 
-.grid-item .gif {
-    display: none; /* Hide the GIF initially */
-    position: absolute; 
-    /* top: 0;
+.grid-item .thumbnail {
+    position: absolute; /* Ensure it stacks properly */
+    top: 0;
     left: 0;
     width: 100%;
-    height: 100%; */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
 }
+
+.grid-item .gif {
+    display: none; /* Hide the GIF initially */
+    position: absolute; /* Ensure it stacks properly */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
 .grid-item:hover .thumbnail {
     display: none; /* Hide the static thumbnail on hover */
 }
