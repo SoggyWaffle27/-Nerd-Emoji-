@@ -179,11 +179,11 @@ h1 {
     margin: 0px 200px;
 }
 
-.grid-item .thumbnail {
-    /* position: absolute; Ensure it stacks properly */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
+/* .grid-item .thumbnail {
+    position: absolute; Ensure it stacks properly 
+    object-fit: cover; 
+} */
+ 
 .grid-item .gif {
     display: none; /* Hide the GIF initially */
     /* position: absolute; Ensure it stacks properly */
