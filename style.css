@@ -185,7 +185,7 @@ h1 {
 
 .grid-item .gif {
     display: none; /* Hide the GIF initially */
-    /* position: absolute; Stack it on top of the thumbnail */
+    position: absolute; 
     /* top: 0;
     left: 0;
     width: 100%;
