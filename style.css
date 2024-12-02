@@ -191,3 +191,10 @@ h1 {
     width: 100%;
     height: 100%; */
 }
+.grid-item:hover .thumbnail {
+    display: none; /* Hide the static thumbnail on hover */
+}
+
+.grid-item:hover .gif {
+    display: block; /* Show the GIF on hover */
+}
