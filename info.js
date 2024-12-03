@@ -12,20 +12,20 @@ const contentMap = {
     "Image Replacement": {
         title: "Title1",
         paragraph: "Paragraph 1",
-        image: "image-replacement.jpg",
-        file: "files/image-replacement.pdf" // Path to the downloadable file
+        image: "Images/image-replacement.jpg",
+        file: "Downloads/ImageReplacement.zip" // Path to the downloadable file
     },
     "Fake Captcha Test": {
         title: "Title2",
         paragraph: "Paragraph 2",
-        image: "fake-captcha.jpg",
-        file: "Captcha-Redirect.zip" // Path to the downloadable file
+        image: "Images/fake-captcha.jpg",
+        file: "Downloads/Captcha-Redirect.zip" // Path to the downloadable file
     },
     "Redacted Information": {
         title: "Title3",
         paragraph: "Paragraph 3",
-        image: "redacted-info.jpg",
-        file: "files/redacted-info.pdf" // Path to the downloadable file
+        image: "Images/redacted-info.jpg",
+        file: "Downloads/RedactedBeta.zip" // Path to the downloadable file
     },
 };
 
