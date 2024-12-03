@@ -12,3 +12,12 @@ modeSwitcher.addEventListener('click', () => {
         modeSwitcher.textContent = 'Dark Mode';
     }
 });
+
+document.querySelectorAll('.info-link').forEach(link => {
+    link.addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent default navigation
+        const info = this.getAttribute('data-info');
+        // Navigate with query parameter
+        window.location.href = `info.html?info=${encodeURIComponent(info)}`;
+    });
+});
