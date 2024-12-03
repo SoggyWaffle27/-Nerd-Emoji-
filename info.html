@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info.css">
     <title>Prank Extensions</title>
     <link rel="icon" href="./fiat.jpeg" type="image/x-icon"> 
 </head>
@@ -41,12 +41,20 @@
         </div>
     </header>
 
-    <main>d
-        <h1 id="page-title"></h1>
-        <p id="page-content"></p>
-        <a class="download-button" id="download-button" href="#" style="display: none;" download>Download File</a>
+    <main>
+        <div class="container">
+            <div class="image-section">
+                <img id="dynamic-image" src="" alt="Dynamic Content Image" style="max-width: 100%; height: auto; display: none;">
 
-        <img id="dynamic-image" src="" alt="Dynamic Content Image" style="max-width: 100%; height: auto; display: none;">
+            </div>
+            <div class="content-section">
+                <h1 id="page-title"></h1>
+                <p id="page-content"></p>
+                <a class="download-button" id="download-button" href="#" style="display: none;" download>Download File</a>
+            </div>
+        </div>
+
+
     </main>
 
     <script src="info.js"></script>

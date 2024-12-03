@@ -1,0 +1,281 @@
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles  ------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333; /* Default text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.light-mode {
+    background-color: #ffffff; /* Light mode background */
+    color: #d8d8d8; /* Text color for light mode */
+}
+
+body.dark-mode {
+    background-color: #393939; /* Dark mode background */
+    color: #d8d8d8; /* Text color for dark mode */
+}
+
+/* Header Styles ------- */
+header {
+    background-color: #3a68d4; /* Blue for header */
+    color: #fff; /* White text */
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-item a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+/* H1 Styles */
+h1 {
+    text-align: center;
+    margin: 40px 0px;
+} 
+
+p {
+    margin: 4px 0;
+}
+
+/* Grid Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.grid-item {
+    background: #454545; /* Gradient for items */
+    border: 1px solid #000;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    /* position: relative; Ensure relative positioning for absolute child elements */
+}
+
+.grid-item .info {
+    padding: 10px;
+}
+
+#modeSwitcher {
+    background-color: #ffef42; /* Primary blue color */
+    color: #000000; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+#modeSwitcher:hover {
+    background-color: #41413d; /* Darker blue for hover effect */
+}
+
+#modeSwitcher:active {
+    background-color: #2a2a2a; /* Even darker blue for active state */
+}
+
+.limited-width-image {
+    width: 100%; /* Makes the image fill the width of the container */
+    height: 200px; /* Set the desired height for the image container */
+    object-fit: cover; /* Crops the image to fill the container while preserving aspect ratio */
+    display: block; /* Ensures the image behaves as a block-level element */
+}
+
+.logo {
+    position: absolute; /* Positions the element relative to the page */
+    background-color: yellow; /* Yellow background box */
+    color: #000; /* Black text for contrast */
+    padding: 15px 20px; /* Adds space inside the box */
+    font-size: 1.5rem; /* Adjusts the font size */
+    font-weight: bold; /* Makes the text bold */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+}
+
+.dropdowns {
+    margin: 0px 230px;
+}
+ 
+.grid-item .gif {
+    display: none; /* Hide the GIF initially */
+}
+
+.grid-item:hover .thumbnail {
+    display: none; /* Hide the static thumbnail on hover */
+}
+
+.grid-item:hover .gif {
+    display: block; /* Show the GIF on hover */
+}
+/* Button for download */
+.download-button {
+    background-color: #3a68d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #373737; /* Darker shade on hover */
+}
+
+
+
+/* Main Container Styling */
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%; /* Full width of the viewport */
+}
+
+/* Left Section Styling */
+.image-section {
+    flex: 1; /* Takes up half the width */
+    background-color: rgb(61, 145, 255); /* Yellow background */
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    padding: 0px; /* Adds spacing around the image */
+}
+
+#dynamic-image {
+    max-width: 90%; /* Keeps the image responsive and inside the container */
+    max-height: 90%; /* Prevents the image from overflowing the container */
+    display: block;
+    /* border: 2px solid black; 
+    border-radius: 5px;  */
+}
+
+/* Right Section Styling */
+.content-section {
+    flex: 1; /* Takes up half the width */
+    display: flex;
+    flex-direction: column; /* Stacks title, paragraph, and button vertically */
+    justify-content: center; /* Centers content vertically */
+    align-items: flex-start; /* Aligns content to the left */
+    padding: 40px; /* Adds spacing around the content */
+    gap: 20px; /* Space between title, paragraph, and button */
+}
+
+/* Title Styling */
+#page-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Paragraph Styling */
+#page-content {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Button Styling */
+.download-button {
+    background-color: #3a68d4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2f5bb7;
+}
