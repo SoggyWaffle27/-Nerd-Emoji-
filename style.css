@@ -195,4 +195,20 @@ p {
 .grid-item:hover .gif {
     display: block; /* Show the GIF on hover */
 }
+/* Button for download */
+.download-button {
+    background-color: #3a68d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
 
+.download-button:hover {
+    background-color: #373737; /* Darker shade on hover */
+}
