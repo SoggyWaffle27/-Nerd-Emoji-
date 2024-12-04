@@ -1,10 +1,25 @@
+const modeSwitcher = document.getElementById('modeSwitcher');
+const body = document.body;
+
+modeSwitcher.addEventListener('click', () => {
+    // Toggle the dark mode class on the body element
+    body.classList.toggle('dark-mode');
+
+    // Update button text based on current mode
+    if (body.classList.contains('dark-mode')) {
+        modeSwitcher.textContent = 'Light Mode';
+    } else {
+        modeSwitcher.textContent = 'Dark Mode';
+    }
+});
+
 // Function to get query parameters
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
 
-// Get the info parameter
+// Get the info parameter 
 const info = getQueryParam('info');
 
 // Map of info to titles, paragraphs, images, and downloadable files
