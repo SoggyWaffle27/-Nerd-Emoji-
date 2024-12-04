@@ -30,6 +30,14 @@ body.dark-mode {
     color: #d8d8d8; /* Text color for dark mode */
 }
 
+infotext.light-mode {
+    color: #d8d8d8; /* Text color for light mode */
+}
+
+infotext.dark-mode {
+    color: #d8d8d8; /* Text color for dark mode */
+}
+
 /* Header Styles ------- */
 header {
     background-color: #3a68d4; /* Blue for header */
