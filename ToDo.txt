@@ -4,3 +4,4 @@ Fill out info on info.html
 Format the text: info.html
 Format Images on info.html
 Finish yt vid for redacted
+Fix Dark Mode info.html
