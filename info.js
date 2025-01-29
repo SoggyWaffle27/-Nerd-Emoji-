@@ -25,22 +25,25 @@ const info = getQueryParam('info');
 // Map of info to titles, paragraphs, images, and downloadable files
 const contentMap = {
     "Image Replacement": {
-        title: "Title1",
-        paragraph: "Paragraph 1",
+        title: "Silly Image Overlay",
+        paragraph: "This chrome extension applies silly images overtop of any google search image or youtube thumbnail. The instructions for installation are linked below",
         image: "Images/ReplaceCover.png",
-        file: "Downloads/ImageReplacement.zip" // Path to the downloadable file
+        file: "Downloads/ImageReplacement.zip", // Path to the downloadable file,
+        link: "https://www.youtube.com/watch?v=XEiswpJjNnM"
     },
     "Fake Captcha Test": {
         title: "Title2",
         paragraph: "Paragraph 2",
         image: "Images/CaptchaCover.png",
-        file: "Downloads/Captcha-Redirect.zip" // Path to the downloadable file
+        file: "Downloads/Captcha-Redirect.zip", // Path to the downloadable file,
+        link: "https://www.youtube.com/watch?v=sgmiIkoIt4I"
     },
     "Redacted Information": {
         title: "Title3",
         paragraph: "Paragraph 3",
         image: "Images/RedactedCover.png",
-        file: "Downloads/RedactedBeta.zip" // Path to the downloadable file
+        file: "Downloads/RedactedBeta.zip", // Path to the downloadable,
+        link: "https://www.youtube.com/watch?v=sgmiIkoIt4I"
     },
 };
 
@@ -49,6 +52,7 @@ const titleElement = document.getElementById('page-title');
 const contentElement = document.getElementById('page-content');
 const imageElement = document.getElementById('dynamic-image');
 const downloadButton = document.getElementById('download-button');
+const ytButton = document.getElementById('youtube-button');
 
 // Update content based on info parameter
 if (info && contentMap[info]) {
@@ -63,6 +67,11 @@ if (info && contentMap[info]) {
     downloadButton.download = content.file.split('/').pop(); // Set the file name for download
     downloadButton.textContent = `Download ${content.title} File`;
     downloadButton.style.display = "inline-block"; // Show the button
+
+    ytButton.href = content.link;
+    //downloadButton.download = content.link.split('/').pop(); // Set the file name for download
+    ytButton.textContent = `Youtube Tourtorial`;
+    ytButton.style.display = "inline-block"; // Show the button
 } else {
     titleElement.textContent = "Default Title";
     contentElement.textContent = "Default paragraph content for unrecognized info.";

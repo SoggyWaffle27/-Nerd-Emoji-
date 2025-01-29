@@ -287,3 +287,20 @@ p {
 .download-button:hover {
     background-color: #2f5bb7;
 }
+
+.youtube-button {
+    background-color: #3a68d4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+
+.youtube-button:hover {
+    background-color: #373737; /* Darker shade on hover */
+}

@@ -1,4 +1,3 @@
-Return Link on info.html Doesnt work
 Fix formating on info.html
 Fill out info on info.html
 Format the text: info.html
