@@ -17,7 +17,7 @@ modeSwitcher.addEventListener('click', () => {
 function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
-}
+} 
 
 // Get the info parameter 
 const info = getQueryParam('info');
