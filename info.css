@@ -30,13 +30,24 @@ body.dark-mode {
     color: #d8d8d8; /* Text color for dark mode */
 }
 
-infotext.light-mode {
+.infotext.light-mode {
     color: #d8d8d8; /* Text color for light mode */
 }
 
-infotext.dark-mode {
+.infotext.dark-mode {
     color: #d8d8d8; /* Text color for dark mode */
 }
+
+body.light-mode {
+    background-color: #ffffff; /* Light mode background */
+    color: #d8d8d8; /* Text color for light mode */
+}
+
+body.dark-mode {
+    background-color: #393939; /* Dark mode background */
+    color: #d8d8d8; /* Text color for dark mode */
+}
+
 
 /* Header Styles ------- */
 header {
@@ -75,7 +86,7 @@ nav {
 .nav-item a {
     text-decoration: none;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1rem; 
     padding: 10px 15px;
     display: block;
 }
