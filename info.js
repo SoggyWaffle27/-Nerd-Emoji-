@@ -32,15 +32,15 @@ const contentMap = {
         link: "https://www.youtube.com/watch?v=XEiswpJjNnM"
     },
     "Fake Captcha Test": {
-        title: "Title2",
-        paragraph: "Paragraph 2",
+        title: "Fake Captcha Test",
+        paragraph: "This chrome extension replaces the google newtab page with a fake captcha test. The tests varry from really realistic to absolutly absurd! On top of this, the test doesnt even check what the user inputs, so they will only be able to succeed at random.",
         image: "Images/CaptchaCover.png",
         file: "Downloads/Captcha-Redirect.zip", // Path to the downloadable file,
         link: "https://www.youtube.com/watch?v=sgmiIkoIt4I"
     },
     "Redacted Information": {
-        title: "Title3",
-        paragraph: "Paragraph 3",
+        title: "Redacted [Beta]",
+        paragraph: "This chrome extension 'redacts' information on almost any website! It takes any html with the <p> tag and replaces a random amount of words in that text with 'REDACTED', to mess with the user.",
         image: "Images/RedactedCover.png",
         file: "Downloads/RedactedBeta.zip", // Path to the downloadable,
         link: "https://www.youtube.com/watch?v=sgmiIkoIt4I"
